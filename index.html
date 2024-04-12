@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="images/top icon.png">
     <link rel="stylesheet" href="icon.css">
     <link rel="stylesheet" href="i_c.css">
+    <link rel="stylesheet" href="option.css">
     <title>Krazy Kitchen katerers</title>
 </head>
 <body id="bodyy">
@@ -62,6 +63,39 @@
       
         showSlide(currentIndex);
       </script>
+<div class="container">
+  <div class="item">
+    <h1>Menu</h1>
+    <img class="all_image" src="img8.jpg" alt="Image 1">
+    <h2>You can cheak our menu and order</h2>
+    <h2>food as you want.</h2>
+    <a href=""><button class="o_b">MENU</button></a>
+  </div>
+  <div class="item">
+    <h1>Locaction</h1>
+    <img src="img9.jpg" class="all_image" alt="Image 2">
+    <h2>You can Find us.</h2>
+    <a href=""><button class="o_b">LOCATION</button></a>
+  </div>
+  <div class="item">
+    <h1>Contact</h1>
+    <img class="all_image" src="img10.jpg" alt="Image 3">
+    <h2>Also you can cheak our contact </h2><h2> to order some thing.</h2>
+    <a href=""><button class="o_b">CONTACT</button></a>
+  </div>
+</div>
 
+<script>
+  // Resize event listener to adjust flex basis on window resize
+  window.addEventListener('resize', function() {
+    var items = document.querySelectorAll('.item');
+    items.forEach(function(item) {
+      item.style.flexBasis = (window.innerWidth > 600) ? '200px' : '100%';
+    });
+  });
+
+  // Initial execution for page load
+  window.dispatchEvent(new Event('resize'));
+</script>
 </body>
 </html>
